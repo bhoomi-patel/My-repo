@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Amazon</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+         <div class="nav-logo border">
+              <div class="logo" ></div>
+         </div>
+         <div class="nav-address">
+             <div class="nav-address border">
+                <p class="add-first">Hello</p>
+                 <div class="add-icon">
+                 <i class="fa-solid fa-location-dot"></i>
+                 <p class="add-second">Select your address</p>
+                 </div>
+              </div>
+    </div>
+      <div class="nav-search">
+          <select class="search-select">
+              <option>All</option>
+          </select>
+          <input placeholder="Search Amazon.in" class="search-input"> 
+          <div class="search-icon"> <i class="fa-sharp fa-solid fa-magnifying-glass"></i> </div>
+     </div>
+      <div class="india">
+          <img src="file:///C:/Users/Palak/Downloads/india2.jpg" >
+          <select class="lang">
+              <option>EN</option>
+              <option>HINDI</option>
+	          <option>GUJARATI</option>
+          </select>
+     </div>
+         <div class="nav-signin">
+               <p><span>Hello, sign in</span></p>
+                <p><b>Account &amp; Lists</b></p>
+        </div>
+
+       <div class="nav-return">
+          <p><span>Returns,</span></p>
+          <p><b>Account &amp; Order</b></p>
+       </div>
+      <div class="nav-cart">
+           <i class="fa-solid fa-cart-shopping"></i>
+           <b>Cart</b>
+      </div>
+    </div>
+            
+
+</header>
+
+<section>   
+<div id="arrow-left" class="arrow"></div>
+<div class="image-item">
+    <div class="slide slide1"></div>
+    <div class="slide slide2"></div>
+    <div class="slide slide3"></div>
+    <div class="slide slide4"></div>
+    <div class="slide slide5"></div>
+</div>
+    <div id="arrow-right" class="arrow"></div>
+  
+<script>
+    let sliderImages = document.querySelectorAll(".slide"),
+    arrowLeft = document.querySelector("#arrow-left"),
+    arrowRight = document.querySelector("#arrow-right"),
+    current = 0;
+    
+    // Clear all images
+    function reset() {
+    for (let i = 0; i < sliderImages.length; i++) {
+    	sliderImages[i].style.display = "none";
+        }
+    }
+    
+    // Initial slide
+    function startSlide() {
+    reset();
+    sliderImages[0].style.display = "block";
+    }
+    
+    // Show previous
+    function slideLeft() {
+    reset();
+    sliderImages[current - 1].style.display = "block";
+    current--;
+    }
+    
+    // Show next
+    function slideRight() {
+    reset();
+    sliderImages[current + 1].style.display = "block";
+    current++;
+    }
+    
+    // Left arrow click
+    arrowLeft.addEventListener("click", function () {
+    if (current === 0) {
+    	current = sliderImages.length;
+    }
+    slideLeft();
+    });
+    
+    // Right arrow click
+    arrowRight.addEventListener("click", function () {
+    if (current === sliderImages.length - 1) {
+    	current = -1;
+    }
+    slideRight();
+    });
+    
+    startSlide();
+</script>
+
+</section>
+
+<section>
+<div class="shop-section">
+<main class="main">
+<div class="cart-product-container">
+<div class="cart-product">
+<h2> Keep shopping for </h2>
+<div class="cart-product-nested-cart">
+<div class="cart-nested1">
+     <img src="https://m.media-amazon.com/images/I/41lVlhok0KL._MCnd_AC_.jpg">
+     <p> Men's sneakers</p>
+</div>
+<div class="cart-nested2">
+     <img src="https://m.media-amazon.com/images/I/51s3eI1+WYL._MCnd_AC_.jpg">
+     <p> Smart watches</p>
+</div>
+<div class="cart-nested3">
+     <img src="https://m.media-amazon.com/images/I/31991seDfcL._MCnd_AC_.jpg">
+     <p>Instant water heater </p>
+</div>
+<div class="cart-nested4">
+     <img src="https://m.media-amazon.com/images/I/319QlGBNWHL._MCnd_AC_.jpg">
+     <p>Skin care </p>
+<button class="cart-product-btn">See More</button>
+</div>
+</div>
+</div>
+
+
+<div class="cart-product-2">
+<h2>  Restyle your home  </h2>
+<div class="cart-product-nested-cart-2">
+<div class="cart-nested1-2">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2023/Jupiter/QCandCC/PCQCRevised/Curtain_186x116_QC_PC_5._SY116_CB575816590_.jpg">
+     <p> Curtains</p>
+</div>
+<div class="cart-nested2-2">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2023/Jupiter/QCandCC/PCQCRevised/Functional_Lighting-1_186_116._SY116_CB575816590_.jpg">
+     <p> Floor lamps </p>
+</div>
+<div class="cart-nested3-2">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2023/Jupiter/QCandCC/PCQCRevised/Under-Bed-Storage-1-186x116._SY116_CB575816590_.jpg">
+     <p> Under bed storage </p>
+</div>
+<div class="cart-nested4-2">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2023/Jupiter/QCandCC/PCQCRevised/Showpieces-2_186x116._SY116_CB575816590_.jpg">
+     <p> Showpieces and Idols </p>
+<button class="cart-product-btn">See More</button>
+</div>
+</div>
+</div>
+
+
+<div class="cart-product-3">
+<h2> Shoes and Handbags</h2>
+<div class="cart-product-nested-cart-3">
+<div class="cart-nested1-3">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/PCQC/phase3/Sports_low_res._SY116_CB575250117_.png">
+     <p> Sports Shoes</p>
+</div>
+<div class="cart-nested2-3">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/PCQC/phase3/Men_low_res._SY116_CB575248862_.jpg">
+     <p> Men's Shoes</p>
+</div>
+<div class="cart-nested3-3">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/PCQC/phase3/Heels_low_res._SY116_CB575248862_.png">
+     <p> Woman's Shoes </p>
+</div>
+<div class="cart-nested4-3">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/PCQC/phase3/HB_low_res._SY116_CB575250117_.png">
+     <p> Handbags </p>
+<button class="cart-product-btn">See More</button>
+</div>
+</div>
+</div>
+
+
+
+<div class="cart-product-4">
+<h2>Deals on smartphones that suits your budget</h2>
+<div class="cart-product-nested-cart-4">
+<div class="cart-nested1-4">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/Meghana/Phase3/PC/Desktop_QuadCard_186x116_01._SY116_CB575166656_.jpg">
+     <p> Budget | Below 10,000/-</p>
+</div>
+<div class="cart-nested2-4">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/Meghana/K8/Desktop_QuadCard_186x116._SY116_CB575152829_.jpg">
+     <p> Mid range | 10,000-25,000</p>
+</div>
+<div class="cart-nested3-4">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/Meghana/K8/Desktop_QuadCard_186x116_01._SY116_CB575152829_.jpg">
+     <p> Premium |25,000-40,000 </p>
+</div>
+<div class="cart-nested4-4">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/Meghana/Phase3/PC/Desktop_QuadCard_186x116_04._SY116_CB575166656_.jpg">
+     <p> Ultra premium | Above 40,000 </p>
+<button class="cart-product-btn">See More</button>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+</main>
+
+<main class="main">
+<div class="cart-product-container2">
+<div class="cart-product-5">
+<h2> Great Indian Festival | Finale Days </h2>
+<div class="cart-product-nested-cart-5">
+<div class="cart-nested1-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/PCS_PC_QC_1X._SY116_CB575171519_.jpg">
+     <p> Minimum 40% off</p>
+</div>
+<div class="cart-nested2-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/Gifting_PC_QC_1X._SY116_CB575263820_.jpg">
+     <p> Up to 70% off</p>
+</div>
+<div class="cart-nested3-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/Diwali_PC_QC_1X._SY116_CB575171213_.jpg">
+     <p>Up to 70% off </p>
+</div>
+<div class="cart-nested4-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/Happy_Hour_PC_QC_1X._SY116_CB575519288_.jpg">
+     <p>Limited period offer </p>
+<button class="cart-product-btn">See More</button>
+</div>
+</div>
+</div>
+
+
+<div class="cart-product-6">
+<h2> Bags Watches & more  </h2>
+<div class="cart-product-nested-cart-6">
+<div class="cart-nested1-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/PCQC/phase3/Low_jewl._SY116_CB575249357_.jpg">
+     <p> Jewellery & accessories</p>
+</div>
+<div class="cart-nested2-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/PCQC/phase3/Low_watches._SY116_CB575249357_.jpg">
+     <p> Watches & Smartwatches </p>
+</div>
+<div class="cart-nested3-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/PCQC/phase3/safari_low_res._SY116_CB575250389_.jpg">
+     <p> Bags & luggage </p>
+</div>
+<div class="cart-nested4-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Media/Jupiter/Trimmer_2x._SY116_CB575417933_.jpg">
+     <p> Trimmer | Under 999/- </p>
+<button class="cart-product-btn">See More</button>
+</div>
+</div>
+</div>
+
+
+<div class="cart-product-7">
+<h2> Gifting Specials</h2>
+<div class="cart-product-nested-cart-7">
+<div class="cart-nested1-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Jup23/2x_Desktop_Quad_card_w_title_-_Card_._SY116_CB575604128_.jpg">
+     <p> Chocolates</p>
+</div>
+<div class="cart-nested2-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Jup23/2x_Desktop_Quad_card_w_title_-_Card_3_copy._SY116_CB575604128_.jpg">
+     <p> Sweets</p>
+</div>
+<div class="cart-nested3-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Jup23/2xDesktopQuadcardw_title-Ca._SY116_CB575603759_.jpg">
+     <p> Dry fruits </p>
+</div>
+<div class="cart-nested4-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Jup23/2x_Desktop_Quad_card_w_title_-_Card_1_copy._SY116_CB575604128_.jpg">
+     <p>Explore all top offers</p>
+<button class="cart-product-btn">See More</button>
+</div>
+</div>
+</div>
+
+
+
+<div class="cart-product-8">
+<h2>Up to 60% off | Get festive ready </h2>
+<div class="cart-product-nested-cart-8">
+<div class="cart-nested1-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/Apparel_Jup23_QC_PC_186x116._SY116_CB574628240_.png">
+     <p> Festive fashion</p>
+</div>
+<div class="cart-nested2-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/Jewellery_Jup23_QC_PC_186x116._SY116_CB574628240_.png">
+     <p> Jewellery</p>
+</div>
+<div class="cart-nested3-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/Home_Jup23_QC_PC_186x116._SY116_CB574628240_.png">
+     <p> Home </p>
+</div>
+<div class="cart-nested4-5">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/Kitchen_Jup23_QC_PC_186x116._SY116_CB574628240_.png">
+     <p> Kitchen </p>
+<button class="cart-product-btn">See More</button>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+</main>
+
+<main class="main">
+<div class="cart-product-container3">
+<div class="cart-product-A1">
+<h2>Up to 70% off | Amazon Renewed </h2>
+<div class="cart-product-A">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/certified_refurbished/anjaga/Jupiter23/JupiterGWCampaigns/Desktop-CC2._SY304_CB575248587_.jpg" >
+</img>
+
+<button class="cart-product-btn">See More</button>
+</div>
+</div>
+
+<div class="cart-product-B1">
+<h2>Starting ₹59 | Mobile accessories</h2>
+<div class="cart-product-B">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/Jupiter23/MSO/Phase3/PC/Phase3_Desktop_CC_379x304._SY304_CB575149382_.jpg" >
+</img>
+
+<button class="cart-product-btn">See More</button>
+</div>
+</div>
+
+<div class="cart-product-C1">
+<h2>Buy 2 Get 10% off, freebies & more offers </h2>
+<div class="cart-product-C">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/kindle-content-smeghn/ART/Jan23/BAU/758x608_phase3_ke._SY304_CB575273971_.jpg" >
+</img>
+
+<button class="cart-product-btn">See More</button>
+</div>
+</div>
+
+<div class="cart-product-D1">
+<h2>Up to 70% off | International brands </h2>
+<div class="cart-product-D">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/OOC/Gateway/1103/banner/GW/Desktop_CC_02._SY304_CB575308225_.jpg" >
+</img>
+
+<button class="cart-product-btn">See More</button>
+</div>
+</div>
+</div>
+</main>
+
+<main class="main">
+<div class="cart-product-container4">
+<div class="cart-product-E">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/AmazonPay/Jupiter23/Wave3/Train_GW_editorial_2300x646._CB575359240_.jpg" ></img>
+</div>
+
+<div class="cart-product-F">
+<div class="cart-product-F1">
+<img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/c295fc49-c032-4c1a-a254-b61264dab908.jpg"> </img>
+</div>
+</div>
+</main>
+</div>
+</section>
+
+<footer>
+<div class="foot-panel1">
+     Back to Top
+</div>
+
+<div class="foot-panel2">
+<ul>
+<p><b>Get to Know Us</b></p>
+<a>About Us</a>
+<a>Careers</a>
+<a>Press Releases</a>
+<a>Amazon Science</a>
+</ul>
+
+<ul>
+<p><b>Connect with Us</b></p>
+<a>Facebook</a>
+<a>Twitter</a>
+<a>Instagram</a>
+</ul>
+
+<ul>
+<p><b>Make Money with Us</b></p>
+<a>Sell on Amazon</a>
+<a>Sell under Amazon Accelerator</a>
+<a>Protect and Build Your Brand</a>
+<a>Amazon Global Selling</a>
+<a>Become an Affiliate</a>
+<a>Fulfilment by Amazon</a>
+<a>Advertise Your Products</a>
+<a>Amazon Pay on Merchants</a>
+</ul>
+
+<ul>
+<p><b>Let Us Help You</b></p>
+<a>COVID-19 and Amazon</a>
+<a>Your Account</a>
+<a>Returns Centre</a>
+<a>100% Purchase Protection</a>
+<a>Amazon App Download</a>
+<a>Help</a>
+</ul>
+</div>
+
+<div class="foot-panel3">
+<img src="file:///C:/Users/Palak/Desktop/a-img.jpg"> </img>
+</div>
+
+<div class="foot-panel4">
+<div class="pages">
+<a> Conditions of Use</a>
+<a> Privacy Notice</a>
+<a> Interest-Based Ads </a>
+</div>
+<div class="copyright">
+© 1996-2023, Amazon.com, Inc. or its affiliates
+</div>
+</div>
+
+</footer>
+</body>
+</html>
