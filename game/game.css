@@ -98,6 +98,7 @@ h1 {
     #msg {
         color: green;
         font-size: 8vmin;
+        text-align:center;
     }
 
     #reset-btn {
